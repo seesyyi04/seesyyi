@@ -1,5 +1,8 @@
-h1 {
+html * {
 	font-family: baskerville;
+}
+
+h1 {
 	font-size: 50;
 	letter-spacing: 0.4em;
 	line-height: 80px;
@@ -13,7 +16,7 @@ hr {
 
 .sidebar {
 	height: 100%;
-	width: 160px;
+	width: 180px;
 	position: fixed;
 	z-index: 1;
 	top: 0;
@@ -35,7 +38,17 @@ hr {
 	color: cornflowerblue;
 }
 
-.main {
-	margin-left: 180px;
-	padding: 20px;
+.body_paragraph {
+	font-size: 18px;
+}
+p {
+	margin-left: 200px;
+	padding-top: 25px;
+	font-size: 18px;
+}
+
+.project1 {
+	margin-left: 200px;
+	padding-top: 0.1px;
+	font-size: 15px;
 }
