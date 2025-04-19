@@ -23,7 +23,7 @@ hr {
 	border-style: solid;
 	top: 110px;
 	z-index: 6;
-	width: 98.5%;
+	width: 100%;
 	background-color: white;
 }
 
@@ -53,19 +53,20 @@ hr {
 
 p {
 	font-size: 18px;
-	text-indent: 0;
 	text-align: left;
 }
 
 .project1 {
 	margin-left: 200px;
 	padding-top: 140px;
+	padding-left: 5%;
 	font-size: 15px;
 }
 
 .resume {
 	margin-left: 200px;
 	padding-top: 140px;
+	padding-left: 5%;
 	font-size: 15px;
 }
 
