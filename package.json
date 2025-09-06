@@ -1,0 +1,26 @@
+{
+	"name": "seesyyi",
+	"version": "1.0.0",
+	"main": "dist/server.js",
+	"scripts": 
+	{
+		"build": "tsc",
+		"start": "node dist/server.js",
+		"dev": "tsc && node dist/server.js"
+	},
+	"dependencies": 
+	{
+		"express": "^5.1.0",
+		"path": "^0.12.7"
+	},
+	"devDependencies":
+	{
+		"typescript": "^5.9.2",
+		"@types/express": "^5.0.3",
+		"@types/node": "^24.3.1"
+	},
+	"engines": 
+	{
+		"node": ">=18.0.0"
+	}
+}
