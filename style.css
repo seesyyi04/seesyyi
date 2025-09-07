@@ -1,92 +1,95 @@
-html * {
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+html {
 	font-family: baskerville;
+	font-size: 24px;
+	scroll-behavior: smooth;
+} 
+
+body {
+	background-color: #9C638D;
+	color: #333;
 }
 
-.header {
-	position: fixed;
-	font-size: 50;
-	top: 0;
-	left: 0;
-	letter-spacing: 0.4em;
-	line-height: 80px;
-	text-indent: 50px;
-	background-color: white;
+.header-nav-container {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	max-width: 1200px;
 	width: 100%;
-	height: 120px;
-	z-index: 5;
+	margin: 0 auto;
+	background-color: #9C638D;
 }
 
-hr { 
+h1 {
+	color: white;
+	font-size: 35px;
+	letter-spacing: 0.25em;
+	text-align: left;
+	padding: 17px 30px;
+}
+
+section{
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: flex-end;
+	justify-content: flex-start;
+}
+
+#home {
+	background-color: #9C638D;
+}
+#projects {
+	background-color:#9C638D;
+}
+#contact {
+	background-color: #9C638D;
+}
+
+nav {
+	background-color: #9C638D;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: left;
+	padding: 22px;
+}
+hr {
 	position: fixed;
 	height: 2px; 
 	line-height: 2px;
 	border-style: solid;
-	top: 110px;
-	z-index: 6;
+	top: 120px;
+	z-index: 10;
 	width: 100%;
-	background-color: white;
-}
-
-.sidebar {
-	height: 100%;
-	width: 180px;
-	position: fixed;
-	z-index: 1;
-	top: 0;
+	color: white;
 	left: 0;
-	overflow-x: hidden;
-	padding-top: 150px;
-	text-indent: 35px;
 }
-
-.sidebar a {
-	padding: 12px 14px 12px 22px;
+nav .container {
+	text-align: center; 
+}
+nav .container ul {
+	list-style: none;
+	display: flex;
+	justify-content: center;
+}
+nav .container ul li {
+	margin: 16px 10px;
+}
+nav .container ul li a {
+	display: inline-block;
+	padding: 10px 20px;
+	color: rgb(255, 255, 255);
 	text-decoration: none;
-	font-size: 25px;
-	color: rgb(0, 0, 0);
-	display: block;
+	letter-spacing: 0.05em;
+	border-radius: 4px;
+	transition: all 0.3s ease;
 }
-
-.sidebar a:hover {
-	color: cornflowerblue;
-}
-
-p {
-	font-size: 20px;
-	text-align: left;
-}
-
-.project1 {
-	margin-left: 200px;
-	padding-top: 140px;
-	padding-left: 5%;
-	font-size: 15px;
-}
-
-.resume {
-	margin-left: 200px;
-	padding-top: 130px;
-	padding-left: 5%;
-	font-size: 18px;
-}
-
-.pdf {
-	width: 100%;
-	height: 100vh;
-	width: 90vh;
-	border: none;
-}
-
-.contact {
-	margin-left: 200px;
-	padding-top: 130px;
-	padding-left: 5%;
-	font-size: 18px;
-}
-
-.main {
-	margin-left: 200px;
-	padding-top: 130px;
-	padding-left: 5%;
-	font-size: 18px;
-}
+nav .container li.active a {
+	color:#FFA658;
+}  
