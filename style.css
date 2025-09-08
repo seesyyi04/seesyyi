@@ -15,6 +15,16 @@ body {
 	color: #333;
 }
 
+strong {
+	font-size: 22px;
+}
+p {
+	color: white;
+}
+a {
+	color: #FFA658;
+}
+
 .header-nav-container {
 	display: flex;
 	justify-content: space-between;
@@ -23,6 +33,36 @@ body {
 	width: 100%;
 	margin: 0 auto;
 	background-color: #9C638D;
+}
+.image-col {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	gap: 40px;
+	margin-top: 75px;
+}
+
+.image-size {
+	height: auto;
+	width: 300px;
+	border: 1px solid #FFA658;
+	flex-shrink: 0;
+}
+
+.image-text {
+	color: white;
+	font-size: 20px;
+	max-width: 70%;
+	line-height: 1.4;
+	margin: 0;
+}
+
+.image-item {
+	display: flex;
+	flex-direction: row;
+	align-self: flex-start;
+	gap: 20px;
 }
 
 h1 {
@@ -33,32 +73,11 @@ h1 {
 	padding: 17px 30px;
 }
 
-section{
-	height: 100vh;
-	width: 100%;
-	display: flex;
-	align-items: flex-end;
-	justify-content: flex-start;
+h2 {
+	color: white;
+	font-size: 35px;
 }
 
-#home {
-	background-color: #9C638D;
-}
-#projects {
-	background-color:#9C638D;
-}
-#contact {
-	background-color: #9C638D;
-}
-
-nav {
-	background-color: #9C638D;
-	width: 100%;
-	position: fixed;
-	display: flex;
-	justify-content: left;
-	padding: 22px;
-}
 hr {
 	position: fixed;
 	height: 2px; 
@@ -69,6 +88,74 @@ hr {
 	width: 100%;
 	color: white;
 	left: 0;
+}
+
+section{
+	position: relative;
+	height: 100vh;
+	width: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 40px;
+}
+
+#about {
+	background-image: url('/seesyyi04/docs/poppies.jpg');
+	background-size: cover;
+	background-position: center 10%;
+	background-repeat: no-repeat;
+}
+#about h2 {
+	color: white;
+	font-size: 30px;
+	text-decoration: underline;
+	align-self: flex-start;
+	white-space: nowrap;
+	position: absolute;
+	top: 160px;
+	left: 50px;
+	z-index: 5;
+}
+.intro-text {
+	background-color: rgb(222, 222, 222, 0.75);
+	padding: 12px;
+	border-radius: 10px;
+	max-width: 83%;
+}
+.intro-text p {
+	color: #9C638D;
+}
+
+#projects {
+	background-color:#9C638D;
+	height: auto;
+}
+
+#contact {
+	background-color: #9C638D;
+	height: 87vh;
+}
+
+#projects h2, #contact h2 {
+	color: white;
+	font-size: 30px;
+	text-decoration: underline;
+	align-self: flex-start;
+	position: absolute;
+	top: 40px;
+	left: 50px;
+	z-index: 5;
+}
+
+nav {
+	background-color: #9C638D;
+	width: 100%;
+	position: fixed;
+	display: flex;
+	justify-content: left;
+	padding: 22px;
+	z-index: 1000;
 }
 nav .container {
 	text-align: center; 
