@@ -101,7 +101,7 @@ section{
 }
 
 #about {
-	background-image: url('/seesyyi04/docs/poppies.jpg');
+	background-image: url('../docs/poppies.jpg');
 	background-size: cover;
 	background-position: center 10%;
 	background-repeat: no-repeat;
